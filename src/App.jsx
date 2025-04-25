@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="container">
       <div className="left">
-        <h1>Image testing</h1>
+        {/* <h1>Image testing</h1> */}
       </div>
       <div className="right">
         <div className="title">
