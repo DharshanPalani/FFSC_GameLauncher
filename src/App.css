@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Container style */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E6876A;
+  width: 100%;
+  height: 600px;
+}
+
+/* Left image style section */
+.left {
+  flex: 2;
+}
+
+/* Right title and button style section */
+.right {
+  flex: 1;
+  text-align: left;
+}
+
+.title {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+  padding: 10px;
+
+  font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+button {
+  width: 250px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid black;
+  background-color: #FFAD94;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #df8e76;
+  cursor: pointer;
+}
+
+p {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+}
