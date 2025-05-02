@@ -1,0 +1,9 @@
+{
+    "$schema": "../schemas/capability.schema.json",
+    "identifier": "main",
+    "permissions": [
+      "dialog:allow-open"
+    ],
+    "windows": ["main"]
+  }
+  

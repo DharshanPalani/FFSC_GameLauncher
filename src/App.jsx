@@ -1,6 +1,19 @@
 import "./App.css";
-
+import { open } from "@tauri-apps/plugin-dialog";
 function App() {
+
+  const readFileContent = async () => {
+    try {
+      const selectPath = await open({
+        multiple: false,
+        title: "Select a file"
+      });
+      console.log(selectPath);
+    } catch (error) {
+      alert("Error: " + error);
+    }
+  }
+
   return (
     <div className="container">
       <div className="left">
@@ -14,7 +27,7 @@ function App() {
         </div>
 
         <div className="buttons">
-          <button>
+          <button onClick={readFileContent}>
             <p>Start</p>
           </button>
           <button>
